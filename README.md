@@ -1,4 +1,4 @@
-https://smallmanisaac.github.io/GameDev22-Isaac/
+https://smallmanisaac.github.io/GameDev22-Isaac/public/html
 
 
 
