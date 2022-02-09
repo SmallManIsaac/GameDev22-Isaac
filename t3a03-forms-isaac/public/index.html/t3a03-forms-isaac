@@ -1,0 +1,34 @@
+<h6>Version 0.0.1</h6>
+
+<h1 align=center>t3a03-forms-isaac.html</h1>
+<font color=blue> Prove you can use: Forms</font>
+
+The following are all formelements (add to them):<br>
+<form >
+
+Enter your First Name:<input type=text id="myText01" value="Isaac"><br>
+Checkbox: <br>
+Beef:<input type=checkbox><br>
+Veggy: <input type=checkbox><br>
+Radio Buttons:<br>
+ 107.7 <input type=radio name="myRad01" value=""><br>
+ 83.5 <input type=radio name="myRad01"value=""><br>
+ 
+hidden:<input type=hidden ><br>
+File:<input type=file><br>
+reset:<input type =reset><br>
+Sumbit (advanced)<input tpye=sumbit><br>
+
+Button: <input type=button value="click" onclick="{
+  document.getElementById('myArea01').value = 'Cool'
+}"><br>
+Textarea:<br>
+<textarea id="myArea01" cola=60 rows=5 > wow </textarea><br>
+
+Select Box:<BR>
+<select id="mySelect01" size=2>
+<option value='myOne'>One
+<option value='myTwo'>Two
+<option value='myThree'>Three
+</select>
+</form> 
