@@ -11,6 +11,7 @@ locations extra effects on the tags on your web page)<br>
 
 Here is typical in document style
 <pre>
+&LT;/style&GT;
 b {
   color: #00ff00;
 }
