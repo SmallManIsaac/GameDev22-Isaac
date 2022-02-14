@@ -10,8 +10,8 @@ Another way to do CSS (Cascading Style Sheets: determine colors
 locations extra effects on the tags on your web page)<br>
 
 Here is typical in document style
+&LT;style&GT;
 <pre>
-&LT;/style&GT;
 b {
   color: #00ff00;
 }
