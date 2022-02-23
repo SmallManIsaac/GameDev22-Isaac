@@ -1,0 +1,48 @@
+Verison 0.0.1
+
+<h2 align=center>t3a07-decision-by-Isaac.html
+
+<a href"http://www.w3schools.com/js/js_if_else.asp">Good Reference to Decisions if ... else statments
+Javascript innerHTML value by Isaac</a><br>
+Note: ! = Note, && = And, || = OR
+  
+<h4> Example input output code</h4>
+<pre>
+let myHour = 20
+if (myHour < 18) {
+   let myGreeting = 'Good day';
+}
+</pre>
+
+<h4> Example working code</h4>
+
+<input id="myNum01" type=number value="4" ><br>
+
+<input type=button value="Simple if Statment for Decison Making" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value)
+    if (myIn01 >= 3){
+        document.getelementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+    }
+}">
+
+<input type=button value="if...else" onclick="{
+    let myIn01 = parseFloat(document.getelementById('myNum01').value)
+    if (myIn01 >= 3){
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+    } else {    
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
+}">
+
+<input type=button value="Complex if" onclick{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value
+    if ((myIn01 != 3){
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex'
+    } else {
+        document.getElementById('myDiv01').innerHtml = myIn01 + ' is not complex'
+}">
+  
+  
+  
+  
+  
+<div id="myDiv01">...</div>
