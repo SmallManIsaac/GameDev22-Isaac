@@ -1,16 +1,17 @@
-Verison 0.0.1
+Version 0.0.1
 
-<h2 align=center>t3a07-decision-by-Isaac.html
+<h2 align=center>t3a07-decision-by-Isaac.html</h2>
 
-<a href"http://www.w3schools.com/js/js_if_else.asp">Good Reference to Decisions if ... else statments
+<a href="https://www.w3schols.com/js/js_if_else.asp">Good reference to Decisions if
+... else statements
 Javascript innerHTML value by Isaac</a><br>
-Note: ! = Note, && = And, || = OR
-  
-<h4> Example input output code</h4>
+Note: ! = Not,  && = AND,   || = OR
+
+<h4> Example input output code</a><br>
 <pre>
 let myHour = 20
 if (myHour < 18) {
-   let myGreeting = 'Good day';
+  let myGreeting = 'Good day';
 }
 </pre>
 
@@ -18,31 +19,27 @@ if (myHour < 18) {
 
 <input id="myNum01" type=number value="4" ><br>
 
-<input type=button value="Simple if Statment for Decison Making" onclick="{
+<input type=button value="if...else" onclick="{
+   let myIn01 = parseFloat(document.getElementById('myNum01').value)
+   if (muIn01 >= 3){
+       document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+   }
+}">
+
+<input type=button value="if...else" oncli9ck="{
     let myIn01 = parseFloat(document.getElementById('myNum01').value)
     if (myIn01 >= 3){
-        document.getelementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
-    }
-}">
-
-<input type=button value="if...else" onclick="{
-    let myIn01 = parseFloat(document.getelementById('myNum01').value)
-    if (myIn01 >= 3){
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
-    } else {    
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
-}">
-
-<input type=button value="Complex if" onclick{
-    let myIn01 = parseFloat(document.getElementById('myNum01').value
-    if ((myIn01 != 3){
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex'
+        document.getElementById('myDiv01').innerHTML = myIn01 = ' is greater than 3'
     } else {
-        document.getElementById('myDiv01').innerHtml = myIn01 + ' is not complex'
+        document.getelementByID('myDiv01').innerHTML = myIn01 + ' is less than 3'}
 }">
-  
-  
-  
-  
-  
-<div id="myDiv01">...</div>
+
+<input type=button value="Complex if" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value)
+    if ((myIn01 != 3 || myIn01 > -3)  && myIn01 <=100 ){
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex
+    } else {
+        document.getElementById(;myDiv02').innerHTML = myIn01 + ' is not complex'}
+}">
+
+<div id="myDiv01>...</div>                                                                                      
