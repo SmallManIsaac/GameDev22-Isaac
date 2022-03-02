@@ -1,0 +1,31 @@
+Version 0.0.1
+
+<h2 align=center>t3a08-loops-by-Isaac.html</h2>
+
+<a href="">Good reference to Javascript Loops</a><br>
+
+
+
+<h4> Example input output code</h4>
+
+Max loops: <input id="myNum01" type=number value="4" ><br>
+
+<input type=button value="Basoc for loop with Decisions" onclick{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+       
+    let myMax = parseInt(document.getElementById('myNum01').value)
+       
+    for (let myloop = 0; myloop < myMax; myLoop++ ){
+        if (myLoop * 2 > myMax){
+           myTemp += ' cool '
+       }
+      
+       myTemp += 'Loop number: ' + myLoop + '<br>'
+     }
+     document.getElementById('myDiv01').innerHTML = myTemp
+}">
+|
+
+
+<div id"=myDiv01">...</div>
