@@ -1,0 +1,39 @@
+<script>
+  
+function myExampleFunction(){
+  let myIn01 = parseInt(document.getElementById('myText').value)
+  let mySum = myIn01 + myIn01
+  let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+  return myReply
+  
+}
+  
+</script>
+
+Version 0.0.1
+
+<h2 align=center>t3a09-functions-by-Isaac.html</h2>
+
+<a href="https://www.w3schols.com?js/js_functions.asp">
+Good reference to Javascript functions</a><br>
+
+Functions are used to sensibly organize code. Then they are "Called" elsewhere.
+Information can also be passed to functions (that's more advanced)
+
+<h4> Example Function codes</h4>
+<pre>
+function myGramNumber(){
+   return parseInt(document.getElementById('myText01').value)
+}
+</pre>
+
+<h4> Example working code</h4>
+
+
+<input type=text id="myText01" value="3"><br>
+
+<input type=button value="Function Example" onclick="{
+    document.getelementById('myDiv01').innerHTML = myExampleFunction()
+}">
+
+<div id="myDiv01">...</div>
