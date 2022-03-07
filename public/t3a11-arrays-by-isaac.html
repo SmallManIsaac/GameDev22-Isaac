@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.1-1
 
 <h2 align=center>t3a11-arrays-by-Isaac.html</h2>
 
@@ -6,38 +6,53 @@ Version 0.0.1
 
 Arrays are stored numbered variables
 
-<h4> Example Array Code</h4>
+<h4> Example Array code</h4>
 <pre>
    myArray = new Array()
-   myArray[0] = 'Harry'
-   myArray[1] = 'Paige'
+   myArray[0] = 'Fred'
+   myArray[1] = 'Mary'
+   myArray[2] = 'Zizzy'
+   myArray[3] = 'Owen'
+   myArray[4] = 'Liv'
+   myArray[5] = 'Isaac(that's me)'
+   myArray[6] = 'Maddy'
+   myArray[7] = 'Nick'
+   myArray[8] = 'Jason'
+   myArray[9] = 'Joesph'
    
 </pre>
 
-<h4 Example working code</h4>
+<h4> Example working Array code</h4>
 
 
-Max Array Entry: <input type=text id="myText01" vale="3"><br>
+Max Array Entry: <input type=text id="myText01" value="3"><br>
 
 <input type=button value="Example onClick" onClick="{
-   let myTemp = document.getElementById('myText01').value
-   let mySum = ''
-   document.getElementById('myDiv01').innerHTMl = ' '
+   let myMax = document.getElementById('myText01').value
+   let myTemp = ''
+   document.getElementById('myDiv01').innerHTML = ' '
                                                     
-   myArray[0] = 'Harry'
-   myArray[1] = 'Paige'
-   myArray[2] = 'Dan'
-   myArray[3] = 'Syndey'
-   myArray[4] = 'Bri'
-   myArray[5] = 'Jeremy' 
+   myArray = new Array()
+   myArray[0] = 'Fred'
+   myArray[1] = 'Mary'
+   myArray[2] = 'Zizzy'
+   myArray[3] = 'Owen'
+   myArray[4] = 'Liv'
+   myArray[5] = 'Isaac(that's me)'
+   myArray[6] = 'Maddy'
+   myArray[7] = 'Nick'
+   myArray[8] = 'Jason'
+   myArray[9] = 'Joesph'                                                 
                                                     
-   for (let myLoop=0;   myLoop < myTemp; myLoop++){
-      mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>
+   for (let myLoop=0;   myLoop < myMax;  myLoop++){
+      myTemp += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop]
++'<br>'
    }
-   document.getElementById(myDiv01').innerHTMl = mySum
+   document.getelementById('myDiv01').innerHTML = myTemp
 }">
 
 <div id="myDiv01">...</div>
 
-
 <br>
+
+You can do at least 7 other arrays for 8 out of 9:<br>
