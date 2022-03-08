@@ -21,8 +21,8 @@ Arrays are stored numbered variables
 Max Array Entry: <input type=text id="myText01" value="3"><br>
 
 <input type=button value="Example onClick" onClick="{
-   let myMax = document.getElementById('myText01').value
-   let myTemp = ''
+   let myTemp = document.getElementById('myText01').value
+   let mySum = ''
    document.getElementById('myDiv01').innerHTML = ' '
                                                     
    myArray = new Array()
@@ -30,7 +30,7 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
    myArray[1] = 'Mary'
    myArray[2] = 'Zizzy'                                                 
                                                     
-   for (let myLoop=0;   myLoop < myMax;  myLoop++){
+   for (let myLoop=0;   myLoop < myTemp;  myLoop++){
       myTemp += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop]
 +'<br>'
    }
