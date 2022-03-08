@@ -1,4 +1,5 @@
 Version 0.0.1.1
+
 <h2 align=center>t3a06-variables-by-Isaac.html</h2>
 
 <a href="">You find one or more good reference links to Variables In Javascript
@@ -19,7 +20,6 @@ For Global variables Mr.Ellis prefers to use document.myVarName
 <h4> Example working code</h4>
 
 <input id="myText01" type=text value="The Dog" >
-<input id="myText02" type=text value="The Cat" >
 
 <input type=button value="Show Variables" onclick="{
      let myIn01 = document.getElementById('myText01').value
@@ -28,7 +28,8 @@ For Global variables Mr.Ellis prefers to use document.myVarName
 }"><br>
 
 <input type=button value="Using no variables" onclick="{
-    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = 
+        document.getElementById('myText01').value
 }"><br>
 
 <div id="myDiv01">..</div>
