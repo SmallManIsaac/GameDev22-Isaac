@@ -30,7 +30,7 @@ Max Array Entry: <input type=text id="myText01" value="8"><br>
    let mySum = ''
    document.getElementById('myDiv01').innerHTML = ' '
                                                     
-   myArray = new Array()
+   myArray = new Array(8)
    myArray[0] = 'Fred'
    myArray[1] = 'Mary'
    myArray[2] = 'Zizzy'
@@ -41,7 +41,7 @@ Max Array Entry: <input type=text id="myText01" value="8"><br>
    myArray[7] = 'Isaac'                                                
                                                     
    for (let myLoop=0;   myLoop < myTemp;  myLoop++){
-      myTemp += 'Loop #:8 ' + myLoop + ' array entry:8 ' + myArray[myLoop] +'<br>'
+      myTemp += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
    }
    document.getelementById('myDiv01').innerHTML = mySum
 }">
