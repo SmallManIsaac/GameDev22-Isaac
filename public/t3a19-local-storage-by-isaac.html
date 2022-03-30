@@ -1,0 +1,25 @@
+
+<h2>t3a19-local-storage-by-Isaac. Introductions</h2>
+
+<body onload="{
+   myStorage = localStorage.getItem('myStoredText')
+   if (myStorage != null){
+       document.getElementById('myText1').value = myStorage
+     }
+}">
+  
+<body onupload="{
+   localstorage.setItem('myStroedText',document.getElementById('myText1').value)
+}">
+  
+Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
+  
+<input type="button" value="Stored Text" onclick="{
+   localStorage.setItem('myStoredText',document.getElementById('myText1').value)
+   alert(document.getElementById('myText1').value + ' \nHas been stored')
+   document.getElementById('myText1').value = ''
+}">
+  
+<input type="button" value="Retrieve Text" onclick="{
+   document.getElementById('myText1').value = localStroage.getItem('myStoredText')
+}">                                                    
