@@ -53,4 +53,18 @@ You use Loops and variables to make fastfancy drawings <br><br>
 }"><br><br>
 
 <input type=button value="clearRect(20, 20, 50, 50)" onclick="{
-                                                              
+   myContext.clearRect(20, 20, 50, 50)                                                           
+}">
+
+<input type=button value="Clear all" onclick="{
+   myContext.clearRect(0, 0 my Canvas.width, myCanvas.height)
+}"><br><br>
+
+<canvas id="myCoolTag" width="1000" height="600" style="border:1px solid #000000;"></canvas>
+
+<script>
+    // set up global variables
+    let myCanvas=document.getElementById('myCoolTag')
+    let myCanvas=document.getContext('2d')
+</script>    
+                                              
