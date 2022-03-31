@@ -44,3 +44,28 @@ myFun('28')      // This activates the function
 }"><br><br>
 
 <div id='myDiv129'>...</div><br>
+
+<input id="myButton131" type="button" value="Extend a class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()                                                                           
+}"><br><br>
+
+<div id='myDiv131'>...</div><br>
