@@ -12,34 +12,30 @@ let myPerson = {
    "firstName": "Isaac",
    "lastName": "Crocker",
    "age": 17,
-   "eyeColor": "hazal"
+   "eyeColor": "green"
    }
 
 </pre>
 
 <h4> Example working Objects code</h4>
 
-Nothing: <input type=text id="myText01" value="Error does not work so wait"><br>
-
-
-<input type=button value="Example Object Set and Show" onClick="{
-                                                                
-  let myPerson = {
-    'firstName' : 'Isaac'
-    'lastName'  : 'Crocker'
-    'age'       :  17,
-    'eyeColor'  : 'hazal'
+Store these Items in a Javascript object <br>
+    <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
+   "firstName": "Isaac",
+   "lastName": "Crocker",
+   "age": 17,
+   "eyeColor": "green"
 }
-                                                                
-  document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has
-properties: <br>'
-   document.getElementById('myDiv01').innerHTML += 'firstName: ' +
-myPerson.firstName + '<br>'
-   document.getElementById('myDiv01').innerHTML += 'You do the others  <br> '
-                                                                
-}">
+    </textarea><br> 
+    
+<input id="myButton128" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
+                                                                         
+    document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
+                                                       
+                                                              
+}"><br><br>
 
-<div id="myDiv01">...</div>
-
-
-<br>
+<div id='myDiv128'>...</div><br>
