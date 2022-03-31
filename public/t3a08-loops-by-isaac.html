@@ -12,24 +12,20 @@ Version 0.0.1
 
 <h4> EXample working code</h4>
 
-Max loops: <input id="myNum01" type=number value="4" ><br>
+ 
 
-<input type=button value="Basic for loop with Decisions" onclick{
-    document.getElementById('myDiv01').innerHTML = ''
-    let myTemp = ''
-       
-    let myMax = parseInt(document.getElementById('myNum01').value)
-       
-    for (let myloop = 0; myloop < myMax; myLoop++ ){
-        if (myLoop * 2 > myMax){
-           myTemp += ' cool '
-       }
-      
-       myTemp += 'Loop number: '4' + myLoop + '<br>'
-     }
-     document.getElementById('myDiv01').innerHTML = myTemp
-}">
-|
+Loop this many times <input type="number" id="myTextLoop" value="10" size="10"> 
+    
+<input id="myButton125" type="button" value="For Loop" onclick="{
+                                                               
+    document.getElementById('myDiv125').innerHTML = ''   // blank out the DIV  
+                                                               
+    for (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){   
+                                                               
+       document.getElementById('myDiv125').innerHTML += 'Loop #'+ myLoop+'<br>'  
+                                                               
+    }
+                                                               
+}"><br><br>
 
-
-<div id"=myDiv01">...</div>
+<div id='myDiv125'>...</div><br>
