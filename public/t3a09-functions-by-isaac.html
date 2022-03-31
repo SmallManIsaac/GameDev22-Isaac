@@ -30,18 +30,17 @@ function myGrabnumber(){
 
 <input type=text id="myText01" value="5"><br>
 
-<input type=button value="Functions Example" onClick="{
-   document.getelementById('myDiv01').innerHTML = myExampleFunction()
-}">
+ 
 
-<script>
-function myAdvanced(x){
-  x = parseInt(x)
-  return x*x
-}
-</script>
-<input type=button value="Advanced Square" onClick="{
-   document.getElementById('myDiv01').innerHTML =
-     myAdvanced(document.getelementById('myText01').value)
-}">
-<div id="myDiv01">...</div>
+<input id="myButton129" type="button" value="Make and use a function" onclick="{
+
+function myFun(myVar){
+  document.getElementById('myDiv129').innerHTML = 'The function made this line. ' + myVar + ' was passed to the function <br>'                                                                     
+}                                                                     
+                                                                      
+
+myFun('28')      // This activates the function                                                                
+                                                                      
+}"><br><br>
+
+<div id='myDiv129'>...</div><br>
