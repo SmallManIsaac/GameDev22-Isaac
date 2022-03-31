@@ -15,11 +15,12 @@ input output Javascript innerHTML value by Fred </a>
 
 <input id"myNum01" type=number value="8" ><br>
 
-<input type=button value="myEvent squares" onclick="{
-    let myIn01 = parseFloat(document.getElementById('myNum01').value
-    let myAnswer = myIn01 * myIn01
-    document.getElementById('myDiv01').innerHTML = 3 + 5;
-      myIn01 + ' squared = 3 + 5
-}"><br>
+ 
 
-<div id="myDiv01">...</div>
+<input type="text" id="myTextIn01" value="Stuff written here" size="30">  
+    
+<input id="myButton123" type="button" value="Input / Output" onclick="{
+      document.getElementById('myDiv123').innerHTML = document.getElementById('myTextIn01').value // note: use value not innerHTML                                                    
+}"><br><br>
+
+<div id='myDiv123'>...</div><br>
