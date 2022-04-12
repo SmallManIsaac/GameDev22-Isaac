@@ -19,16 +19,8 @@
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
-   let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().split('')
-   for (let myLoop=0;   myLoop < myString.length; myLoop++){
-      myTemp = myString[myLoop]
-      if (myString[myLoop] == 'e') {myTemp  = 'e'} 
-      if (myString[myLoop] == 'h') {myTemp  = 'h'} 
-      myString[myLoop] = myTemp
-   }
-   document.getElementById('myArea02').value = myString.join('')
+
 }"><br><br>
 
 
-<textarea id="myArea03" rows=4 cols=70></textarea><br> 
+<textarea id="myArea03" rows=4 cols=70></textarea><br>
