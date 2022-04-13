@@ -1,7 +1,7 @@
 <h2 align=center>t2a08-canvas by Fred</h2>
 You use loops and variables to make fast fancy drawings <br><br>
 
-<input type=button value=".lineTo(30,200)" onclick="{
+<input type=button value=".lineTo(60,500)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 1;   
    myContext.moveTo(20,10);
@@ -9,7 +9,7 @@ You use loops and variables to make fast fancy drawings <br><br>
    myContext.stroke();
 }">
 
-<input type=button value=".arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
+<input type=button value=".arc(105, 70, 50, 10, 0 * Math.PI)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 10;
    myContext.strokeStyle = 'green';
@@ -17,42 +17,42 @@ You use loops and variables to make fast fancy drawings <br><br>
    myContext.stroke();
 }">
 
-<input type=button value=".fillText('Hello World', 400, 100)" onclick="{
+<input type=button value=".fillText('Hello World', 600, 300)" onclick="{
    myContext.font = '20px Arial';
-   myContext.fillText('Hello World', 400, 100);
-   myContext.translate(400, 100);  
+   myContext.fillText('Hello World', 600, 300);
+   myContext.translate(600, 300);  
    myContext.rotate(60 * Math.PI / 180); 
-   myContext.fillText('Hello World', 10, 10);
+   myContext.fillText('Hello World', 60, 60);
    myContext.stroke();
    myContext.resetTransform();  
    //myContext.rotate(-60 * Math.PI / 180); 
 }">
 
-<input type=button value=".quadraticCurveTo(100,220,240,110)" onclick="{
+<input type=button value=".quadraticCurveTo(300,420,440,310)" onclick="{
    myContext.beginPath();
-   myContext.moveTo(300,100);
-   myContext.quadraticCurveTo(100,220,240,110);
+   myContext.moveTo(700,400);
+   myContext.quadraticCurveTo(300,420,440,310);
    myContext.stroke();
 
 }">
 
 
 
-<input type=button value=".createLinearGradient(100, 300, 200, 400)" onclick="{
-   let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
-   myGradient.addColorStop(0, 'red');
-   myGradient.addColorStop(0.5, 'blue');
-   myGradient.addColorStop(1, 'yellow');
+<input type=button value=".createLinearGradient(400, 200, 300, 100)" onclick="{
+   let myGradient = myContext.createLinearGradient(400, 200, 300, 100);
+   myGradient.addColorStop(0, 'purple');
+   myGradient.addColorStop(0.5, 'green');
+   myGradient.addColorStop(1, 'orange');
 
    myContext.fillStyle = myGradient;
-   myContext.fillRect(100, 300, 200, 400);
+   myContext.fillRect(400, 200, 300, 100);
 
    // reset fillstyle
-   myContext.fillStyle = 'black';
+   myContext.fillStyle = 'brown';
 }"><br><br>
 
-<input type=button value="clearRect(20, 20, 50, 50)" onclick="{
-   myContext.clearRect(20, 20, 50, 50);
+<input type=button value="clearRect(50, 50, 20, 20)" onclick="{
+   myContext.clearRect(50, 50, 20, 20);
 }">
 
 <input type=button value="Clear all" onclick="{
