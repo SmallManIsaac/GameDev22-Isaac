@@ -30,6 +30,8 @@ Events are HTML code that activates Javascript code
 
 <p id="demo"></p>
 
+<p>A function is triggered when the button is double-clicked. The function outputs some text in a p element with id="demo".</p>
+
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
@@ -38,15 +40,8 @@ function myFunction() {
 
 </body>
 </html>
-                 
 
-                                                           
-                                                           
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Select a new car from the list.</p>
+<div id="myDiv01">...</div>
 
 <select id="mySelect" onchange="myFunction()">
   <option value="Tesla">Tesla
@@ -85,7 +80,7 @@ function myFunction(x) {
 </html>
                                                   
 
-<div id="myDiv01">...</div>
+
                                                   
 <b id="myB01" onMouseOut="{
    document.getElementById('myB01').innerHTML = 'This is bold'
