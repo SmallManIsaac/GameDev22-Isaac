@@ -45,6 +45,34 @@ function myFunction() {
 <html>
 <body>
 
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Tesla">Tesla
+  <option value="lamborghini">lamborghini
+  <option value="Mercedes Benz">Mercedes Benz
+  <option value="Hyundai">Hyundai
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>
+                                                           
+                                                           
+<!DOCTYPE html>
+<html>
+<body>
+
 First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
 Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
 
