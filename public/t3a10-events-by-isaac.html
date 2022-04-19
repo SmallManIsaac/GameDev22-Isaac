@@ -22,6 +22,29 @@ Events are HTML code that activates Javascript code
    document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
 }">  
 
+<div id="myDiv01">...</div>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button ondblclick="myFunction()">Double-click me</button>
+
+<p id="demo"></p>
+
+<p>A function is triggered when the button is double-clicked. The function outputs some text in a p element with id="demo".</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
+                                                           
+<div id="myDiv01">...</div>                                                           
+                 
 <!DOCTYPE html>
 <html>
 <body>
