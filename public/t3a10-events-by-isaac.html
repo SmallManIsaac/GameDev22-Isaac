@@ -26,13 +26,13 @@ Events are HTML code that activates Javascript code
 <html>
 <body>
 
-<button ondblclick="myFunction()">Double-click</button>
+<p id="demo" ondblclick="myFunction()">Double-click me to change my text color.</p>
 
-<p id="demo"></p>
+<p>A function is triggered when the p element is double-clicked. The function sets the color of the p element to red.</p>
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+  document.getElementById("demo").style.color = "red";
 }
 </script>
 
@@ -78,7 +78,3 @@ function myFunction(x) {
 </html>
                                                   
 <br>
-     
-You do at least 8 other events:<br>
-onClick, onDbClick, onChange, onBlue, onFocus, onMouseMove, onTouch,
-onKeyDown, onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
