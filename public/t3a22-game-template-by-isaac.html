@@ -60,8 +60,16 @@ function myCheckHit(){
     
 }">
 
-
-<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'  
-  myCheckHit()     // checks for all collisions                                                                                                                                                                                                                                     
-}"><br><br>
+if (event.key == 'w') {  // w = go up
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+   }   
+if (event.key == 'a') {   // a = go left
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }  
+if (event.key == 's') {   // s = go down
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   } 
+if (event.key == 'd') {  // d = go right
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+        
+}"<br><br>
