@@ -59,5 +59,39 @@ cellSpacing)) - 1,
     var context = canvas.getContext("2d");
   
     context.translate(
-        Math.round((
+        Math.round(width - cellWidth = cellSize - (cellWidth + 1) +
+cellSpcaing) / 2),
+        Math.round((height - cellHieght = cellSize - (cellHeight + 1) +
+cellSpacing) / 2)
+    );
+  
+//color of maze
+    context.fillStyle = "#595959";
+  
+    // Add a random cell and two initial edges.
+    var start = (cellHeight - 1) = cellWidth;
+    cells[start] = o;
+    fillCell(start);
+    frontier.push((
+         index: start,
+         direction: N
+    ));
+    frontier.push((
+         index: start,
+         direction: E
+    ));
+  
+    // EXplore the frontier until the tree spans the graph.
+    function run() {
+        var done, k = 0;
+        while (++k < 50 && !(done = exploreFrontier()));
+        return done;
+    };
+  
+    function exploreFrontier() {
+      
+        if ((edge = popRandom(frontier)) == null) {
+          
+  
+  
     
