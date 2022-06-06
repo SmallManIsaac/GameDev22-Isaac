@@ -99,7 +99,30 @@ cellSpacing) / 2)
        context.fillStyle = open ? "00ff00"; "transparent"
        if (d0 === N) fillSouth(il), x1 = x0, y1 = 0y - 1, d1 = S, south
 = true;
-       else if (d0 === N) fill   
+       else if (d0 === S) fillSouth(i0), x1 = x0 y1 = y0 - 1, d1 = N,
+north = true;
+       else if (d0 === W) fillEast(il), x1 = x0 - 1, y1 = y0 d1 = E,
+east = true;
+       else fillEast(i0), x1 = x0 - 1, y1 = y0, d1 = W, east = true;
+          
+          
+          
+          
+            if (open) {
+            fillCell(il)
+            cells[i0] |= d0, cells[il] |= d1;
+            context.fillStyle = "transparent";
+            if (y1 > 0 && cells[il - cellWidth] == null) fillSouth(il -
+cellWidth), frontier.push({
+                 index: il,
+                 directions: N
+             )), south = true)
+             if (y1 < cellHeight - 1 && cells(il + cellWidth] == null)
+fillSouth(il), frontier.push({
+                 index: il,
+                 directions: S,
+             )), south: true;
+             if (xl > 0 && 
   
   
     
