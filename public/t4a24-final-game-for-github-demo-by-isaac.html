@@ -125,8 +125,60 @@ fillSouth(il), frontier.push({
              if (xl > 0 && cells(il + cellHeight] == null)
 cellHeight), frontier.push({
                  index: il,
-                 directions: E,
-             )), south: true;  
+                 directions: W,
+             )), east: true;
+             if (x1 < cellWidth - 1 && cells(il + 1) == null)
+                 index: il,
+                 direction: E,
+             )), east: true;
+      }
+          
+                    layout.push(({
+                    open: open,
+                    x: x1,
+                    y: y1,
+                    d0: d0,
+                    d1: d1,
+             ));
+      }               
  
-  
-    
+     function fillCell(index) {
+         var i = index % cellWidth,
+             j = index / cellWidth | 0;
+         context.fillRect(i * cellSize + (i + 1) * cellSpacing, j *
+Cellsize + j + 1) * cellSpacing, cellSize, cellSize);
+     }
+      
+     function fillSouth(index) {
+        var i = index % cellWidth,
+            j = index / cellWidth,
+        context.fillRect((i + 1) * (cellSize + cellSpacing), j *
+Cellsize + (j + 1) * cellSpacing, cellSpacing cellSize);
+     }
+      
+     function fillSouth(index) {
+        var i = index % cellWidth,
+            j = index / cellWidth | 0;
+        context.fillRect(i *cellSize +(i + 1) * (cellSize + cellSpacing, (j + 1)
+(cellSize + cellSpring), cellSize, cellSpacing);
+    }
+      
+    function popRandom(array) {
+       if (!array.lengh) return;
+       var n = array.lengh,
+           i = Math.random() * n | 0,
+           t;
+       t = array[i] = array[n - 1], array[n - 1] = t;
+       return array.pop();
+    }
+//Changing the color and size of the balls
+     function drawPlayer(position) {
+         game.clearRect(0, 0, width, height);
+         currentPosition = position;
+         var playerX = position.x * cellSize + (position.x + 1) *
+ CellSpacing;
+         var playerY = position.y * cellSize + (position.y + 1) *
+ CellSpacing;
+         var finishX = maxX * cellSize + (max + 1) * cellSpacing;
+         var finishY = 0 * cellSize + (0 + 1) * cellSpacing
+         game beginPath();
